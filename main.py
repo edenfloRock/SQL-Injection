@@ -1,12 +1,13 @@
 import psycopg2
 from psycopg2 import sql
+from decouple import config
 
 connection = psycopg2.connect(
-        host = "",
-        port = "",
-        database = "",
-        user = "",        
-        password = ""
+        host = config('PGSQL_HOST'),
+        port = config('PGSQL_PORT'),
+        database = config('PGSQL_DATABASE'),
+        user = config('PGSQL_USER'),        
+        password = config('PGSQL_PASSWORD')
     )
 
 connection.set_session(autocommit=True)
