@@ -1,0 +1,1 @@
+This project shows how SQL Injection works.
