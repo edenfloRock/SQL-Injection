@@ -2,11 +2,11 @@ import psycopg2
 from psycopg2 import sql
 
 connection = psycopg2.connect(
-        host = "10.0.0.10",
-        port = "5437",
-        database = "edbstore",
-        user = "edbuser",        
-        password = "edbuser"
+        host = "",
+        port = "",
+        database = "",
+        user = "",        
+        password = ""
     )
 
 connection.set_session(autocommit=True)
